@@ -16,6 +16,7 @@
     "tailwindcss-elevation": "^0.3.4"
   },
   "scripts": {
+    "build:azure": "gulp css:prod",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Corey Vittitow",
