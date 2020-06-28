@@ -2,7 +2,10 @@
   "name": "profolio",
   "version": "1.0.0",
   "description": "Pro(fessional) (Port)folio",
-  "main": "index.js",
+  "repository": {
+    "url": "https://github.com/Vittitow/profolio"
+  },
+  "main": "index.html",
   "devDependencies": {
     "@tailwindcss/ui": "^0.3.0",
     "autoprefixer": "^9.7.4",
@@ -16,7 +19,7 @@
     "tailwindcss-elevation": "^0.3.4"
   },
   "scripts": {
-    "build:azure": "gulp css:prod",
+    "build:azure": "gulp css:prod && gulp dist",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Corey Vittitow",

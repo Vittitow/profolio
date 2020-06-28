@@ -28,3 +28,12 @@ gulp.task('css:prod', () => {
         .pipe(sourcemaps.write('.'))
         .pipe(gulp.dest('./css/'));
 });
+
+gulp.task('dist', () => {
+    return gulp.src([
+        'index.html',
+        'favicon.ico',
+        '*css/**/*',
+        '*fonts/**/*'
+    ]).pipe(gulp.dest('./dist/'));
+});
