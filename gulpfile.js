@@ -2,7 +2,7 @@ const gulp = require('gulp');
 const postcss = require('gulp-postcss');
 const sourcemaps = require('gulp-sourcemaps');
 const cleanCSS = require('gulp-clean-css');
-const purgecss = require('gulp-purgecss');
+// const purgecss = require('gulp-purgecss');
 
 gulp.task('css:dev', () => {
     return gulp.src('./site.css')
@@ -23,7 +23,7 @@ gulp.task('css:prod', () => {
             require('tailwindcss'),
             require('autoprefixer')
         ]))
-        .pipe(purgecss({ content: ['**/*.html'] }))
+        // .pipe(purgecss({ content: ['**/*.html'] }))
         .pipe(cleanCSS({ level: 2 }))
         .pipe(sourcemaps.write('.'))
         .pipe(gulp.dest('./css/'));
