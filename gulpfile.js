@@ -34,6 +34,7 @@ gulp.task('dist', () => {
         'index.html',
         'favicon.ico',
         '*css/**/*',
+        '*images/**/*',
         '*fonts/**/*'
     ]).pipe(gulp.dest('./dist/'));
 });
